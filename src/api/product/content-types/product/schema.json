@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "productimage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "secondarytitle": {
+      "type": "string"
+    },
+    "productID": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
+    },
+    "link": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "afterDiscount": {
+      "type": "integer"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "mobiles",
+        "laptops",
+        "fashion",
+        "accesory"
+      ]
+    }
+  }
+}
