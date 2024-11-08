@@ -71,6 +71,11 @@
     },
     "wishlist": {
       "type": "json"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
     }
   }
 }
